@@ -9,7 +9,7 @@ and from the COCO format, however it cannot be installed on some of the latest o
 systems due to fixed dependencies on older tensorflow, torch and other libraries.
 
 How to use:
-from solaris2.data import coco
+from coco_solaris.data import coco
 
 coco.geojson2coco(
     image_src, 
@@ -19,6 +19,8 @@ coco.geojson2coco(
     label_type='geojson', 
     overwrite=False, 
     verbose=False)
+
+For a complete example see the notebook test_json2coco.py in the root folder.
 """
 
 
